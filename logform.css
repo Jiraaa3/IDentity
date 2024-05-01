@@ -1,0 +1,252 @@
+/* CSS for the login page */
+
+body {                /*THE WHOLE BODY OF THE WEB DESIGN*/
+  font-family: Arial, sans-serif;
+  background-image: url('IMG/IMS.webp');
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.login-container {       /*THE COINTAINER WHERE THE BUTTONS, TEXTBOX, LOGINFORM/REGISTER FORM ARE USED*/
+  background: rgba(0, 0, 0, 0.30);
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.6);
+  width: 400px;
+  height: 500px;
+  position: relative;
+  top: -20px;
+}
+
+h2 {        /*A HEADER IT'S SIMPLE TO FIND IN HTML CODE*/
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  z-index: 0;
+}
+
+.login-container h3 {      /*A HEADER IT'S SIMPLE TO FIND IN HTML CODE*/
+  font-family: 'Times New Roman', Times, serif;
+  font-size:  40px;
+  font-weight: 1000;
+  margin-bottom: 40px;
+  margin-top: 0px;
+}
+
+.image-container {      /*I USE A image-contair for the image to manipulate*/
+  position: absolute;
+  top: 20px; /* You need to specify the top value */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.image-container img {        /*the image i manipulate*/
+  position: right;            /* This might be an incorrect value, did you mean 'relative' or 'absolute'? */
+  top: 50px;
+  left: 100px;
+}
+
+.form-group {                    /*a form-group where my dropdown for faculty&student options are located*/
+  margin-bottom: 15px;
+  position: relative;
+  margin-bottom: 15px;         /* This margin-bottom is repeated */
+  
+}
+
+
+
+label {   /*it's just a test like a header above of my dropdown*/
+  display: block;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+select{
+  width: 96%;
+}
+select,           /*the textboxes of my username and password*/
+input[type="text"],
+input[type="password"] {
+  width: 91%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+
+
+.form-group i {             /*the icons right beside of my textboxes*/
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(10%);
+  font-size: 20px;
+}
+
+button {        /*the button specialyyy*/
+  margin-left: 45px;
+  width: 285px;
+  height: 50px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  outline: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {        /*this hover do is to make the button move!! best part*/
+  background-color: #013974;
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+.register-link {
+  text-decoration: none;
+}
+
+.links {       /*you can see this link is the sign up button*/
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.error-message {     /*a message when you type wrong in the textboxes!*/
+  margin-top: -60px;
+  margin-left: 50px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.login-container {          /*a container for the login-container*/
+  width: 400px;
+  height: 500px;
+  overflow: auto;
+}
+
+/* Media query for mobile layout */
+@media (max-width: 500px) {
+  .login-container {
+    width: 300px;
+    height: 350px;
+    padding: 20px;
+  }
+  
+  button {
+    width: 100%;
+    margin-left: 0;
+  }
+  select,
+input[type="text"],
+input[type="password"] {
+  width: 88%;
+
+}
+
+.image-container img {        /*the image i manipulate*/
+  position: right;            /* This might be an incorrect value, did you mean 'relative' or 'absolute'? */
+  top: 10px;
+  left: 20px;
+  width: 200px;
+  height: 130px;
+  margin-left: 170px;
+  margin-top: -20px;
+}
+ 
+select{
+  width: 95%;
+}
+
+}
+
+/* Media query for tablet layout */
+@media (max-width: 800px) {
+  .login-container {
+    width: 400px;
+    height: 350px;
+    padding: 20px;
+  }
+  
+  button {
+    width: 100%;
+    margin-left: 0;
+  }
+  select,
+input[type="text"],
+input[type="password"] {
+  width: 88%;
+
+}
+
+.image-container img {        /*the image i manipulate*/
+  position: right;            /* This might be an incorrect value, did you mean 'relative' or 'absolute'? */
+  top: 10px;
+  left: 20px;
+  width: 200px;
+  height: 130px;
+  margin-left: 170px;
+  margin-top: -20px;
+}
+ 
+select{
+  width: 95%;
+}
+
+}
+
+
+/* Media query for latop layout */
+@media (max-width: 1100px) {
+  .login-container {
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+  }
+  
+  button {
+    width: 100%;
+    margin-left: 0;
+  }
+  select,
+input[type="text"],
+input[type="password"] {
+  width: 88%;
+
+}
+
+.image-container img {        /*the image i manipulate*/
+  position: right;            /* This might be an incorrect value, did you mean 'relative' or 'absolute'? */
+  top: 10px;
+  left: 20px;
+  width: 200px;
+  height: 130px;
+  margin-left: 170px;
+  margin-top: -20px;
+}
+ 
+select{
+  width: 95%;
+}
+
+}
+
+
+

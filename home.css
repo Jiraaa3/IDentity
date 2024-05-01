@@ -1,0 +1,405 @@
+/* Styles for the header */
+
+body {                /*THE WHOLE BODY OF THE WEB DESIGN*/
+  background-image: url('IMG/IMS.webp');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+header {
+  background-color: #071c7c;
+  color: #fff;
+  padding: 20px;
+}
+
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: px;
+  width: 100%;
+}
+
+.image-container {      /*I USE A image-contair for the image to manipulate*/
+  position: absolute;
+  top: 20px; /* You need to specify the top value */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.image-container img {        /*the image i manipulate*/
+  position: right;            /* This might be an incorrect value, did you mean 'relative' or 'absolute'? */
+  top: 50px;
+  left: 100px;
+}
+
+.header-box h1{
+  margin-left: -px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 55px;
+}
+
+/* Styles for the buttons */
+/* Styles for the buttons */
+.buttons {
+  display: flex;
+  flex-direction: column; /* Adjusted to display buttons vertically */
+  align-items: center; /* Centering buttons horizontally */
+  margin-top: 20px;
+}
+
+button {
+  margin-bottom: 30px; /* Spacing between buttons */
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 600px;
+  height: 150px;
+  
+}
+
+
+.upper-btn {
+  margin-left: 45px;
+  width: 600px;
+  height: 150px;
+  padding:  20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  background: url(IMG/T.png);
+  background-size: cover;
+  background-position: center;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  outline: none; /* Remove default button outline */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* Add shadow for depth */
+}
+
+.upper-btn:hover {
+ background: url(IMG/T1.png); /* Darken color on hover */
+ background-size: cover;
+  background-position: center;
+}
+
+.upper-btn:active {
+transform: translateY(2px); /* Add slight downward movement on click */
+}
+
+.middle-btn {
+  margin-left: 45px;
+  width: 600px;
+  height: 150px;
+  padding:  20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  background: url(IMG/M.png);
+  background-size: cover;
+  background-position: center;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  outline: none; /* Remove default button outline */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* Add shadow for depth */
+}
+
+.middle-btn:hover {
+  background: url(IMG/M1.png); /* Darken color on hover */
+  background-size: cover;
+   background-position: center;
+}
+
+.middle-btn:active {
+transform: translateY(2px); /* Add slight downward movement on click */
+}
+
+.lower-btn {
+  margin-left: 45px;
+  width: 400px;
+  height: 120px;
+  padding:  20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  background: url(IMG/L.png);
+  background-size: cover;
+  background-position: center;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  outline: none; /* Remove default button outline */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* Add shadow for depth */
+}
+
+.lower-btn:hover {
+  background: url(IMG/L1.png); /* Darken color on hover */
+ background-size: cover;
+  background-position: center;
+}
+
+.lower-btn:active {
+transform: translateY(2px); /* Add slight downward movement on click */
+}
+
+@media only screen and (max-width: 320px) {
+  .header-box h1 {
+    font-size: 30px; /* Adjusted font size for smaller screens */
+    margin-left: 100px; /* Reset margin */
+   /* Center the heading */
+ 
+  }
+
+  .header-box img {        /*the image i manipulate*/
+    position: right;            /* This might be an incorrect value, did you mean 'relative' or 'absolute'? */
+    top: 50px;
+    left: 100px;
+    width: 80px;
+    height: 100px;
+    margin-left: -20px;
+  }
+  button {
+    width: 60%; /* Full width on smaller screens */
+  }
+
+  .upper-btn,
+  .middle-btn{
+    width: 100%; /* Full width on smaller screens */
+    height: 100px; /* Adjusted height for smaller screens */
+    margin-left: 0%;
+  }
+  .upper-btn,
+  .middle-btn {
+    margin: 1px 0; /* Adjusted margin for smaller screens */
+  }
+
+  .lower-btn {
+    margin-top: 40px;
+    width: 65%; /* Full width on smaller screens */
+    height: 100px; /* Adjusted height for smaller screens */
+    margin-left: 0%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .header-box h1 {
+    font-size: 30px; /* Adjusted font size for smaller screens */
+    margin-left: 100px; /* Reset margin */
+   /* Center the heading */
+ 
+  }
+
+  .header-box img {        /*the image i manipulate*/
+    position: right;            /* This might be an incorrect value, did you mean 'relative' or 'absolute'? */
+    top: 50px;
+    left: 100px;
+    width: 80px;
+    height: 100px;
+    margin-left: -20px;
+  }
+  button {
+    width: 60%; /* Full width on smaller screens */
+  }
+
+  .upper-btn,
+  .middle-btn{
+    width: 100%; /* Full width on smaller screens */
+    height: 100px; /* Adjusted height for smaller screens */
+    margin-left: 0%;
+  }
+  .upper-btn,
+  .middle-btn {
+    margin: 1px 0; /* Adjusted margin for smaller screens */
+  }
+
+  .lower-btn {
+    margin-top: 40px;
+    width: 65%; /* Full width on smaller screens */
+    height: 100px; /* Adjusted height for smaller screens */
+    margin-left: 0%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .header-box h1 {
+    font-size: 30px; /* Adjusted font size for smaller screens */
+    margin-left: 100px; /* Reset margin */
+   /* Center the heading */
+ 
+  }
+
+  .header-box img {        /*the image i manipulate*/
+    position: right;            /* This might be an incorrect value, did you mean 'relative' or 'absolute'? */
+    top: 50px;
+    left: 100px;
+    width: 100px;
+    height: 100px;
+    margin-left: -20px;
+  }
+  button {
+    width: 60%; /* Full width on smaller screens */
+  }
+
+  .upper-btn,
+  .middle-btn{
+    width: 100%; /* Full width on smaller screens */
+    height: 100px; /* Adjusted height for smaller screens */
+    margin-left: 0%;
+  }
+  .upper-btn,
+  .middle-btn {
+    margin: 1px 0; /* Adjusted margin for smaller screens */
+  }
+
+  .lower-btn {
+    margin-top: 40px;
+    width: 65%; /* Full width on smaller screens */
+    height: 100px; /* Adjusted height for smaller screens */
+    margin-left: 0%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .header-box h1 {
+    font-size: 30px; /* Adjusted font size for smaller screens */
+    margin-left: 100px; /* Reset margin */
+   /* Center the heading */
+ 
+  }
+
+  .header-box img {        /*the image i manipulate*/
+    position: right;            /* This might be an incorrect value, did you mean 'relative' or 'absolute'? */
+    top: 50px;
+    left: 100px;
+    width: 100px;
+    height: 100px;
+    margin-left: -20px;
+  }
+  button {
+    width: 60%; /* Full width on smaller screens */
+  }
+
+  .upper-btn,
+  .middle-btn{
+    width: 100%; /* Full width on smaller screens */
+    height: 100px; /* Adjusted height for smaller screens */
+    margin-left: 0%;
+  }
+  .upper-btn,
+  .middle-btn {
+    margin: 1px 0; /* Adjusted margin for smaller screens */
+  }
+
+  .lower-btn {
+    margin-top: 40px;
+    width: 65%; /* Full width on smaller screens */
+    height: 100px; /* Adjusted height for smaller screens */
+    margin-left: 0%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .header-box h1 {
+    font-size: 30px; /* Adjusted font size for smaller screens */
+    margin-left: 100px; /* Reset margin */
+   /* Center the heading */
+ 
+  }
+
+  .header-box img {        /*the image i manipulate*/
+    position: right;            /* This might be an incorrect value, did you mean 'relative' or 'absolute'? */
+    top: 50px;
+    left: 100px;
+    width: 100px;
+    height: 100px;
+    margin-left: -20px;
+  }
+  button {
+    width: 60%; /* Full width on smaller screens */
+  }
+
+  .upper-btn,
+  .middle-btn{
+    width: 100%; /* Full width on smaller screens */
+    height: 100px; /* Adjusted height for smaller screens */
+    margin-left: 0%;
+  }
+  .upper-btn,
+  .middle-btn {
+    margin: 1px 0; /* Adjusted margin for smaller screens */
+  }
+
+  .lower-btn {
+    margin-top: 40px;
+    width: 65%; /* Full width on smaller screens */
+    height: 100px; /* Adjusted height for smaller screens */
+    margin-left: 0%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .header-box h1 {
+    font-size: 30px; /* Adjusted font size for smaller screens */
+    margin-left: 65px; /* Reset margin */
+    text-align: center; /* Center the heading */
+ 
+  }
+
+  button {
+    width: 60%; /* Full width on smaller screens */
+  }
+
+  .upper-btn,
+  .middle-btn{
+    width: 100%; /* Full width on smaller screens */
+    height: 100px; /* Adjusted height for smaller screens */
+    margin-left: 0%;
+  }
+  .upper-btn,
+  .middle-btn {
+    margin: 1px 0; /* Adjusted margin for smaller screens */
+  }
+
+  .lower-btn {
+    margin-top: 40px;
+    width: 65%; /* Full width on smaller screens */
+    height: 100px; /* Adjusted height for smaller screens */
+    margin-left: 0%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .header-box h1 {
+    font-size: 30px; /* Adjusted font size for smaller screens */
+    margin-left: 65px; /* Reset margin */
+    text-align: center; /* Center the heading */
+ 
+  }
+
+  button {
+    width: 60%; /* Full width on smaller screens */
+  }
+
+  .upper-btn,
+  .middle-btn{
+    width: 100%; /* Full width on smaller screens */
+    height: 100px; /* Adjusted height for smaller screens */
+    margin-left: 0%;
+  }
+  .upper-btn,
+  .middle-btn {
+    margin: 1px 0; /* Adjusted margin for smaller screens */
+  }
+
+  .lower-btn {
+    margin-top: 40px;
+    width: 65%; /* Full width on smaller screens */
+    height: 100px; /* Adjusted height for smaller screens */
+    margin-left: 0%;
+  }
+}

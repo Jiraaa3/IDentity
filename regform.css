@@ -1,0 +1,240 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: url("IMG/IMS.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.reg-container {
+  background-color: rgba(0, 0, 0, 0.30);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.842);
+  width: 500px;
+  height: 700px;
+  position: relative;
+  top: -30px;
+}
+
+.form-group {
+  font-size: 15px;
+  width: 95%;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  font-size: 15px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.image-container {         /*I USE A image-contair for the image to manipulate*/
+  position: absolute;       /* if you want to manipulate the image do here!! */
+  top: 20px;                /* You need to specify the top value */
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: 140px;
+}
+
+.image-container img {        /*the image i manipulate*/
+  position: right;            /* This might be an incorrect value, did you mean 'relative' or 'absolute'? */
+  top: 50px;
+  left: 100px;
+}
+
+
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-left: -300px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size:  40px;
+  font-weight: 1000;
+}
+
+select[id="user-type"] {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  width: 100%;
+  padding: 10px;
+}
+
+button {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 285px;
+  height: 50px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  outline: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+.image-container {
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.image-container img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+
+.links {
+  margin-top: 18px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.reg-container {
+  width: 500px;
+  height: 500px;
+  overflow: auto;
+}
+
+/* Media query for mobile layout SMALL*/ 
+@media (max-width: 320px) {
+
+  .reg-container {
+    width: 95%;
+    height: 600px;
+    top: -20px;
+  }
+  .reg-container h3 {
+    margin-right: -20px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  select[id="user-type"] {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+  
+
+  .image-container img {        /*the image i manipulate*/
+    position: right;            /* This might be an incorrect value, did you mean 'relative' or 'absolute'? */
+    top: 10px;
+    left: 20px;
+    width: 200px;
+    height: 130px;
+    margin-left: -100px;
+    margin-top: -10px;
+  }
+ 
+  
+}
+
+/* Media query for mobile layout MEDIUM*/
+@media (max-width: 375px) {
+
+  .reg-container {
+    width: 90%;
+    height: 600px;
+    top: -20px;
+  }
+  .reg-container h3 {
+    margin-right: -40px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  select[id="user-type"] {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+  
+
+  .image-container img {        /*the image i manipulate*/
+    position: right;            /* This might be an incorrect value, did you mean 'relative' or 'absolute'? */
+    top: 10px;
+    left: 20px;
+    width: 200px;
+    height: 130px;
+    margin-left: -40px;
+    margin-top: -10px;
+  }
+ 
+  
+}
+
+
+/* Media query for mobile layout LARGE*/
+@media (max-width: 500px) {
+  .reg-container {
+    width: 90%;
+    height: auto;
+    top: -20px;
+  }
+  .reg-container h3 {
+    margin-left: -210px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  select[id="user-type"] {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}

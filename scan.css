@@ -1,0 +1,29 @@
+
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: px;
+  width: 100%;
+  background-color: rgb(31, 180, 218);
+}
+
+.header-box h1{
+  align-items: center;
+  margin-left: 40%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 55px;
+}
+
+.result{
+    background-color: rgb(216, 37, 6);
+    color:#fff;
+    padding:20px;
+  }
+  .row{
+    display:flex;
+  }
+
+  .Html5QrcodeScanner {
+    margin-left: 300px;
+  }

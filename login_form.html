@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="logform.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="login-container">
+    
+    <h3>LogIn</h3>
+    <div class="image-container">
+      <img src="IMG/DBSLOGO.png" alt="img" width="240" height="150">
+    </div>
+
+
+    <form id="login-form">
+      <div class="form-group">
+        <label for="user-type">User Type</label>
+        <select id="user-type" name="user-type">
+          <option value="faculty">Faculty</option>
+          <option value="student">Student</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="username">School ID</label>
+        <input type="text" id="username" name="username" placeholder="Username" required>
+      <i class='bx bxs-id-card'></i>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        <i class='bx bxs-lock-alt'></i>
+      </div>
+
+      <div class="button-container">
+        <button type="submit">Login</button>
+      </div>
+
+      <div class="links">
+        Don't have an account? <a href="register_form.html">Sign up Here</a>
+        </div>
+      
+    </form>
+    <div id="error-message" class="error-message"></div>
+  </div>
+
+  <script>
+    document.getElementById('user-type').addEventListener('change', function() {
+      var userType = this.value;
+      var usernameInput = document.getElementById('username');
+      if (userType === 'faculty') {
+        usernameInput.placeholder = 'Faculty ID Number';
+      } else if (userType === 'student') {
+        usernameInput.placeholder = 'Student ID Number';
+      }
+    });
+
+    document.getElementById('login-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+
+      // Retrieve registration data from localStorage
+      var registeredUsername = localStorage.getItem('registeredUsername');
+      var registeredPassword = localStorage.getItem('registeredPassword');
+
+      // Check if login credentials match registration data
+      if (username === registeredUsername && password === registeredPassword) {
+        // Redirect to menu page or any other desired page
+        window.location.href = 'home.html';
+      } else {
+        // Display error message if login fails
+        document.getElementById('error-message').innerText = 'Invalid username or password.';
+      }
+    });
+  </script>
+</body>
+</html>
